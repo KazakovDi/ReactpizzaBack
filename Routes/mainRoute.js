@@ -57,8 +57,8 @@ router.post("/checkout", async (req,res)=> {
                 }
             }),
         
-        success_url: `http://localhost:3000/cart`,
-        cancel_url: `http://localhost:3000/`
+        success_url: `https://react-pizza-front-tzcs.vercel.app/cart`,
+        cancel_url: `https://react-pizza-front-tzcs.vercel.app/`
         })
         res.json({url:session.url})
     } catch(err) {
